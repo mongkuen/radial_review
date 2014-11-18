@@ -1,15 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>RadialReview</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -69,13 +57,13 @@
           <h1 class="hidden-phone"><text id="pop">Developing</text> growth is a <text id="pop">journey</text>.<br><br>Join us on ours.</h1>
           <h2 class="visible-phone"><text id="pop">Actualization</text> is a <text id="pop">journey</text>.<br><br>Join us on ours.</h2>
             <br><br>
-            <form class="hidden-phone" action="/register/" method="POST">
+            <form class="hidden-phone" action="/register/" method="POST">{% csrf_token %}
               <p><i>Register with your email:</i></p>
               <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Lets find out if we're right for each other" style="height: 40px; text-align: center; width: 550px;">
               <br><br>
               <input type="submit" value="Start today" class="btn btn-primary btn-large">
             </form>
-            <form class="visible-phone" action="/register/" method="POST">
+            <form class="visible-phone" action="/register/" method="POST">{% csrf_token %}
               <p><i>Register with your email:</i></p>
               <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Lets see if we're right for each other" style="height: 40px; text-align: center; width: 240px; display: inline-block">
               <br><br>
@@ -103,10 +91,10 @@
             <p>Phone: 402-123-4567</p>
             <p>Fax: 402-234-5678</p>
             <p style="margin-bottom: 20px;">Email: <a href="mailto:contact@radialworks.com">contact@radialworks.com</a></p>
-            <%= link_to "CONTACT US", contact_path, class: "btn btn-inverse btn-large", style: "margin-bottom: 25px;" %>
+            <a href="../contact/" class="btn btn-inverse btn-large" style="margin-bottom: 25px;">CONTACT US</a>
           </div>
           <div class="span4" style="text-align: left">     
-            <form action="/thankyou/" method="POST">
+            <form action="/thankyou/" method="POST">{% csrf_token %}
               <h4 class="muted" style="font-size: 18px;">Feedback? Questions?<br> Talk to a real person.</h4><br>
               <input id="id_full_name" maxlength="250" name="full_name" type="text" placeholder="Name">
               <input id="id_email" maxlength="250" name="email" class="required email" type="email" placeholder="E-mail*">
@@ -127,10 +115,10 @@
     <!-------------- STICKY BAR -------------->
     <div class="sticky-bar">
       <div class="hidden-phone" id="mc_embed_signup" style="padding-top: -20px; padding-left: 30px;">
-        <form action="/register/" method="POST">
+        <form action="/register/" method="POST">{% csrf_token %}
           <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Why wait? Get updated." style="margin-bottom: 0px; margin-top: -27px; display: inline-block">
           <input type="submit" value="Subscribe!" class="btn btn-primary" style="display: inline-block; margin-top: -27px;">
-          <%= link_to "Contact Us", contact_path, class: "btn btn-primary", style: "display: inline-block; margin-top: -27px;" %>
+          <a class="btn btn-primary" href="../contact/" style="display: inline-block; margin-top: -27px;">Contact Us</a>
           <a class="iconsocial in" href="http://www.linkedin.com/company/radial-works" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
           <a class="iconsocial tw" href="https://twitter.com/RadialWorks" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
           <a class="iconsocial fb" href="https://www.facebook.com/pages/Radial/339264716218641" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
