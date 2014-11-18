@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title and metadata -->
+    <meta charset="utf-8">
+    <title>Radial</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="description" content="Conduct peer performance assessments efficiently with Radial">
+    <meta name="author" content="RadialWorks">
+    <!-- Styles -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <!--<link href="/static/css/bootstrap-responsive.css" rel="stylesheet">-->
+    <link href="/static/css/docs.css" rel="stylesheet">
+    <link href="/static/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="/static/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/magnific-popup/magnific-popup.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="/static/ico/favicon.ico">
+    <!-- Google Analytics -->
+    <!--<script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.locatio  n.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-44741232-2', 'radialworks.com');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <!-------------- DON'T -------------->
+    <!-------------- LOOK --------------->
+    <!--------------  AT ---------------->
+    <!--------------  ME ---------------->
+    <!-------------- I'M ---------------->
+    <!-------------- SHY ---------------->
+    {% block CONTENT %}
+    {% endblock %}
+    <!-------------- CALL TO ACTION -------------->
+    <a name="register" id="register"></a>
+    <div class="cta">
+      <div class="container">
+        <div class="marketing" style="color: white; margin-bottom: 80px;">
+          <br><br><br>
+          <h1 class="hidden-phone"><text id="pop">Developing</text> growth is a <text id="pop">journey</text>.<br><br>Join us on ours.</h1>
+          <h2 class="visible-phone"><text id="pop">Actualization</text> is a <text id="pop">journey</text>.<br><br>Join us on ours.</h2>
+            <br><br>
+            <form class="hidden-phone" action="/register/" method="POST">{% csrf_token %}
+              <p><i>Register with your email:</i></p>
+              <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Lets find out if we're right for each other" style="height: 40px; text-align: center; width: 550px;">
+              <br><br>
+              <input type="submit" value="Start today" class="btn btn-primary btn-large">
+            </form>
+            <form class="visible-phone" action="/register/" method="POST">{% csrf_token %}
+              <p><i>Register with your email:</i></p>
+              <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Lets see if we're right for each other" style="height: 40px; text-align: center; width: 240px; display: inline-block">
+              <br><br>
+              <input type="submit" value="Start today" class="btn btn-primary btn-large">
+            </form>
+        </div>
+      </div>
+    </div>
+    <!-------------- ARTICLES -------------->
+    <!-------------- FOOTER -------------->
+    <footer class="footer" style=>
+      <a name="footer" id="footer"></a>
+      <div class="container">
+        <div class="row-fluid">
+          <div class="span4" style="text-align: left">
+            <h4 class="muted" style="font-size: 18px;">Who we are:</h4><br>
+            <p style="margin-bottom: 20px;">Radial commits to maximize every human potential by streamlining professional talent development to allow any organization to amplify growth, profit, and actualization.</p>
+            <a href="../" class="logo">
+              <img src="/static/img/radial.png" style="max-height: 80px; margin-bottom: 25px;">
+            </a>
+          </div>
+          <div class="span4" style="text-align: left">
+            <h4 class="muted" style="font-size: 18px;">Lets hear from you!</h4><br>
+            <p>Toll-free: <span style="color:#fff; font-size: 25px;">1-800-123-4567</span></p>
+            <p>Phone: 402-123-4567</p>
+            <p>Fax: 402-234-5678</p>
+            <p style="margin-bottom: 20px;">Email: <a href="mailto:contact@radialworks.com">contact@radialworks.com</a></p>
+            <a href="../contact/" class="btn btn-inverse btn-large" style="margin-bottom: 25px;">CONTACT US</a>
+          </div>
+          <div class="span4" style="text-align: left">     
+            <form action="/thankyou/" method="POST">{% csrf_token %}
+              <h4 class="muted" style="font-size: 18px;">Feedback? Questions?<br> Talk to a real person.</h4><br>
+              <input id="id_full_name" maxlength="250" name="full_name" type="text" placeholder="Name">
+              <input id="id_email" maxlength="250" name="email" class="required email" type="email" placeholder="E-mail*">
+              <textarea id="id_comments" name="comments" required="True" placeholder="Questions/Comments"></textarea>
+              <input type="submit" value="Send" class="btn btn-primary" style="display: inline-block">
+            </form>
+          </div>          
+        </div>
+        <ul class="footer-links">
+          <li><a href="../privacy/">Privacy Policy</a></li>
+          <li class="muted">&middot;</li>
+          <li><a href="../tos/">Terms of Service</a></li>
+          <li class="muted">&middot;</li>
+          <li>&copy; Copyright 2013 Radial, Inc. All rights reserved.</li>
+        </ul>
+      </div>    
+    </footer>
+    <!-------------- STICKY BAR -------------->
+    <div class="sticky-bar">
+      <div class="hidden-phone" id="mc_embed_signup" style="padding-top: -20px; padding-left: 30px;">
+        <form action="/register/" method="POST">{% csrf_token %}
+          <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Why wait? Get updated." style="margin-bottom: 0px; margin-top: -27px; display: inline-block">
+          <input type="submit" value="Subscribe!" class="btn btn-primary" style="display: inline-block; margin-top: -27px;">
+          <a class="btn btn-primary" href="../contact/" style="display: inline-block; margin-top: -27px;">Contact Us</a>
+          <a class="iconsocial in" href="http://www.linkedin.com/company/radial-works" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
+          <a class="iconsocial tw" href="https://twitter.com/RadialWorks" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
+          <a class="iconsocial fb" href="https://www.facebook.com/pages/Radial/339264716218641" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
+          <a class="iconsocial gp" href="https://plus.google.com/114028958260667352075/" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
+        </form>
+      </div>
+      <div class="visible-phone" style="padding-top: 10px; padding-left: 10px;">
+        <a class="iconsocial in" href="http://www.linkedin.com/company/radial-works" target="_blank" style="display: inline-block;"></a>
+        <a class="iconsocial tw" href="https://twitter.com/RadialWorks" target="_blank" style="display: inline-block;"></a>
+        <a class="iconsocial fb" href="https://www.facebook.com/pages/Radial/339264716218641" target="_blank" style="display: inline-block;"></a>
+        <a class="iconsocial gp" href="https://plus.google.com/114028958260667352075/" target="_blank" style="display: inline-block;"></a>
+      </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/magnific-popup/jquery.magnific-popup.js"></script>
+    <!-- MAGNIFIC POPUP INITIATE -->
+    <script>$('.popup-vimeo').magnificPopup({ disableOn: 700, type: 'iframe', mainClass: 'mfp-fade', iframe: { patterns: { vimeo: { index: 'vimeo.com/', id: '/', src: '//player.vimeo.com/video/%id%?autoplay=1' }, } } });</script>
+    <!-- SMOOTH SCROLL INITIATE -->
+    <script>$(document).ready(function(e){ var str= location.hash; var n=str.replace("_temp",""); $('html,body').animate({scrollTop:$(n).offset().top}, 500); });</script>
+    <!-- TWITTER TIMELINE INITIATE -->
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- EQUALHEIGHT INITIATE -->
+    <script type="text/javascript">$(function(){ $('#equalize').equalHeights(); });</script>
+    <script type="text/javascript" src="/static/js/jQuery.equalHeights.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/holder/holder.js"></script>
+    <script src="/static/js/google-code-prettify/prettify.js"></script>
+    <script src="/static/js/application.js"></script>
+    <script src="/static/js/fluidvids.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block CONTENT %}
+<!-------------- NAVBAR CUSTOMERS -------------->
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="../" rel="" id="anchor1" class="anchorLink">Radial</a>
+      <div id="circle"></div>
+      <a href="../signup/" class="try">Try us Free</a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+          <li class="">
+            <a href="../features/" rel="" id="anchor1" class="anchorLink">Features</a>
+          </li>
+          <li class="">
+            <a href="#customers0" rel="" id="anchor1" class="anchorLink">Customers</a>
+          </li>
+          <li class="">
+            <a href="../signup/" rel="" id="anchor1" class="anchorLink">Pricing</a>
+          </li>
+	  <li class="">
+	    <a href="http://medium.com/@radialworks" target="_blank">Blog</a>
+	  </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>  
+<!-------------- CUSTOMERS SHOWCASE --------------> 
+<a name="customers0" id="customers0"></a>
+<div class="testimonialbrand">
+  <div class="marketing">
+    <div class="row-fluid">
+      <h1 style="margin-top:50px; margin-bottom: 30px">See why our customers love Radial</h2>
+      <ul class="thumbnails example-sites" style="margin: 30px 25px 0px 45px;">
+	<li class="span">
+	  <a class="thumbnail" name="customers1" id="customers1">
+	    <img src="/static/img/example-sites/placelogo1.png" alt="SoundReady.fm">
+	  <p class="marketing-byline">"It's literally the best thing in my life" ~ George Washington</p>
+	  </a>
+	</li>
+	<li class="span">
+	   <a class="thumbnail" name="customers2" id="customers2">
+	    <img src="/static/img/example-sites/placelogo2.png" alt="Kippt">
+	  <p class="marketing-byline">"My spoon has never been this big" ~ Stick Figure</p>
+	  </a>
+	</li>
+	<li class="span">
+	   <a class="thumbnail" name="customers3" id="customers3">
+	    <img src="/static/img/example-sites/placelogo3.png" alt="Gather Content">
+	  <p class="marketing-byline">"It's literally the best thing in my life" ~ George Washington</p>
+	  </a>
+	</li>
+	<li class="span">
+	   <a class="thumbnail" name="customers4" id="customers4">
+	    <img src="/static/img/example-sites/placelogo4.png" alt="JS Hint">
+	  <p class="marketing-byline">"My spoon has never been this big" ~ Stick Figure</p>
+	  </a>	
+	</li>
+      </ul>
+    </div>
+  </div>
+  <br><br>
+</div>
+{% endblock %}

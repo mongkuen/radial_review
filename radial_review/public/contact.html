@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+
+{% block CONTENT %}
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="../" rel="" id="anchor1" class="anchorLink">Radial</a>
+      <div id="circle"></div>
+      <a href="#register" class="try">Register</a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+          <li class="">
+            <a href="../#features" rel="" id="anchor1" class="anchorLink">Features</a>
+          </li>
+          <li class="">
+            <a href="../#testimonial" rel="" id="anchor1" class="anchorLink">Customers</a>
+          </li>
+          <li class="">
+            <a href="../#price" rel="" id="anchor1" class="anchorLink">Pricing</a>
+          </li>
+	  <li class="">
+	    <a href="http://medium.com/@radialworks" target="_blank">Blog</a>
+	  </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------- NAVBAR CONTACT--------------
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="../" rel="" id="anchor1" class="anchorLink">Radial</a>
+      <div id="circle"></div>
+      <a href="../signup/" class="try">Try us Free</a>
+      <div class="nav-collapse collapse pull-right">
+        <ul class="nav">
+          <li class="">
+            <a href="../features/" rel="" id="anchor1" class="anchorLink">Features</a>
+          </li>
+          <li class="">
+            <a href="../customers/" rel="" id="anchor1" class="anchorLink">Customers</a>
+          </li>
+          <li class="">
+            <a href="../signup/" rel="" id="anchor1" class="anchorLink">Pricing</a>
+          </li>
+	  <li class="">
+	    <a href="http://medium.com/@radialworks" target="_blank">Blog</a>
+	  </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-------------- CONTACT US -------------->
+<div class="testimonial">
+  <div class="container">
+    <div class="marketing">
+      <h1>Support Center</h1>
+      <p class="marketing-byline">Find answers, get help, or just talk to us. We make it easy to get hold of us.</p>
+      <div class="row-fluid">
+        <div class="span4">
+          <h2><i class="fa fa-phone fa-3x" style="color: #0088cc"></i><br>Contact us.</h2>
+          <p class="marketing-byline">A few ways to get in touch.</p>
+          <div style="text-align: left">
+            <p>Toll-free: <span style="font-size: 25px; color: #0088cc">1-800-123-4567</span></p>
+            <p>Phone: 402-123-4567</p>
+            <p>Fax: 402-234-5678</p>
+            <p>Address: <br>1201 Infinity Court,<br>Lincoln, NE 68512</p>
+            <p style="margin-bottom: 30px;">Email: <a href="mailto:contact@radialworks.com">contact@radialworks.com</a></p>
+          </div>
+        </div>
+        <div class="span4">
+          <h2><i class="fa fa-comments-o fa-3x" style="color: #0088cc"></i><br>Straight to our inbox.</h2>
+          <p class="marketing-byline">We always reply in person.</p>
+          <form action="/thankyou/" method="POST" style="display: inline-block;">{% csrf_token %}
+            <input id="id_full_name" maxlength="250" name="full_name" type="text" required="True" placeholder="Name*">
+            <input id="id_email" maxlength="250" name="email" class="required email" type="email" placeholder="Email*">
+            <input id="id_organization" maxlength="250" name="organization" type="text" placeholder="Organization">
+            <input id="id_address" maxlength="250" name="address" type="text" placeholder="Address">
+            <input id="id_city" maxlength="250" name="city" type="text" placeholder="City">
+            <input id="id_state" maxlength="2" name="state" type="text" placeholder="State">
+            <input id="id_zip_code" maxlength="5" name="zip_code" type="text" placeholder="Zip Code">
+            <input id="id_phone" maxlength="30" name="phone" type="text" placeholder="Phone Number">
+            <textarea cols="40" id="id_comments" name="comments" rows="5" required="True" placeholder="What can we help you with?*"></textarea>
+            <input type="submit" value="Send" class="btn btn-primary btn-large" style="float: right">
+          </form>
+        </div>
+        <div class="span4">
+          <h2><i class="fa fa-twitter fa-3x" style="color: #0088cc"></i><br>Or send a Tweet.</h2>
+          <p class="marketing-byline">Something to share? Let us hear.</p>
+          <a class="twitter-timeline" data-dnt="true"  data-link-color="#0088cc" width="300" height="484" href="https://twitter.com/RadialWorks" data-widget-id="399408349441040385">Tweets by @RadialWorks</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
