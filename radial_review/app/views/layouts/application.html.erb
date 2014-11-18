@@ -73,7 +73,8 @@
               <p><i>Register with your email:</i></p>
               <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Lets find out if we're right for each other" style="height: 40px; text-align: center; width: 550px;">
               <br><br>
-              <input type="submit" value="Start today" class="btn btn-primary btn-large">
+             <!--  <input type="submit" value="Start today" class="btn btn-primary btn-large"> -->
+              <%= link_to "Start today", thankyou_path, class: "btn btn-primary btn-large"%>
             </form>
             <form class="visible-phone" action="/register/" method="POST">
               <p><i>Register with your email:</i></p>
@@ -111,7 +112,8 @@
               <input id="id_full_name" maxlength="250" name="full_name" type="text" placeholder="Name">
               <input id="id_email" maxlength="250" name="email" class="required email" type="email" placeholder="E-mail*">
               <textarea id="id_comments" name="comments" required="True" placeholder="Questions/Comments"></textarea>
-              <input type="submit" value="Send" class="btn btn-primary" style="display: inline-block">
+<!--               <input type="submit" value="Send" class="btn btn-primary" style="display: inline-block"> -->
+              <%= link_to "Send", thankyou_path, class: "btn btn-primary", style: "display: inline-block" %>
             </form>
           </div>          
         </div>
@@ -129,7 +131,8 @@
       <div class="hidden-phone" id="mc_embed_signup" style="padding-top: -20px; padding-left: 30px;">
         <form action="/register/" method="POST">
           <input id="id_subscription_email" maxlength="250" name="subscription_email" type="email" class="required email" required="True" placeholder="Why wait? Get updated." style="margin-bottom: 0px; margin-top: -27px; display: inline-block">
-          <input type="submit" value="Subscribe!" class="btn btn-primary" style="display: inline-block; margin-top: -27px;">
+          <!-- <input type="submit" value="Subscribe!" class="btn btn-primary" style="display: inline-block; margin-top: -27px;"> -->
+          <%= link_to "Subscribe!", thankyou_path, class: "btn btn-primary", style: "display: inline-block; margin-top: -27px;" %>
           <%= link_to "Contact Us", contact_path, class: "btn btn-primary", style: "display: inline-block; margin-top: -27px;" %>
           <a class="iconsocial in" href="http://www.linkedin.com/company/radial-works" target="_blank" style="display: inline-block; margin-top: 10px;"></a>
           <a class="iconsocial tw" href="https://twitter.com/RadialWorks" target="_blank" style="display: inline-block; margin-top: 10px;"></a>

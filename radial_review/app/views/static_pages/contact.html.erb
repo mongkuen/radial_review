@@ -81,7 +81,8 @@
             <input id="id_zip_code" maxlength="5" name="zip_code" type="text" placeholder="Zip Code">
             <input id="id_phone" maxlength="30" name="phone" type="text" placeholder="Phone Number">
             <textarea cols="40" id="id_comments" name="comments" rows="5" required="True" placeholder="What can we help you with?*"></textarea>
-            <input type="submit" value="Send" class="btn btn-primary btn-large" style="float: right">
+
+             <%= link_to "Send", thankyou_path, class: "btn btn-primary btn-large", style: "float: right" %>
           </form>
         </div>
         <div class="span4">
